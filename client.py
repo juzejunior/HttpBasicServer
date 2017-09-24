@@ -25,6 +25,7 @@ while 1:
    rsp = conn.getresponse()
    #print server response and data
    print(rsp.status, rsp.reason)
+   print(rsp.getheaders())
    data_received = rsp.read()
    print(data_received)
 
